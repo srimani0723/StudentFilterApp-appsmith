@@ -1,0 +1,4 @@
+SELECT * FROM public.student_data
+WHERE school_name LIKE {{SchoolDropdown.selectedOptionValue || '%'}}
+AND class LIKE {{ClassDropdown.selectedOptionValue || '%'}}
+AND section LIKE {{SectionDropdown.selectedOptionValue || '%'}}
